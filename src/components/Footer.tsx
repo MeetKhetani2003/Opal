@@ -25,7 +25,7 @@ export default function Footer() {
         {/* Main grid */}
         <div className="py-12 lg:py-16 grid grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10">
           <div className="col-span-2 lg:col-span-4">
-            <div className="flex items-center h-16 lg:h-24">
+            <div className="flex items-center h-12 lg:h-16">
               <img src="/logos/logo-secondary.png" alt="Opal Management & Consulting" className="h-full w-auto object-contain" />
             </div>
             <p className="mt-5 text-sm leading-6 text-white/70 max-w-sm">Boutique craft. Enterprise rigor. We partner with ambitious leaders to design strategy, build capability, and deliver sustainable growth across the GCC and beyond.</p>

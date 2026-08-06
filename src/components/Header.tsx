@@ -42,7 +42,7 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 shrink-0 group">
               <div className="relative">
-                <div className="flex items-center justify-center h-16 lg:h-24">
+                <div className="flex items-center justify-center h-14 lg:h-16">
                   <img src="/logos/logo-primary.png" alt="Opal Management & Consulting" className="h-full w-auto object-contain mix-blend-multiply" />
                 </div>
               </div>
