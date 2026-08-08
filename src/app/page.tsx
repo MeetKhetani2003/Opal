@@ -106,14 +106,7 @@ export default function HomePage() {
             <p className="mt-5 text-[16px] leading-7 text-[#0C3226]/70">
               Opal Management & Consulting was founded on a simple belief: that every business — from ambitious SMBs to established corporates — deserves access to world-class consulting expertise.
             </p>
-            <div className="mt-8 grid grid-cols-2 gap-6 border-t border-black/5 pt-8">
-              {stats.slice(2,4).map(s=>(
-                <div key={s.k}>
-                  <div className="font-serif text-[24px] font-bold text-[#0C3226]">{s.k}</div>
-                  <div className="text-[11px] tracking-[0.14em] uppercase font-bold text-[#0C3226]/40">{s.label}</div>
-                </div>
-              ))}
-            </div>
+
             <Link href="/about" className="mt-8 inline-flex items-center gap-2 bg-[#0C3226] text-white px-6 py-3 rounded-full font-bold text-sm">Our Story ↗</Link>
           </motion.div>
 

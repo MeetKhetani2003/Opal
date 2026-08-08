@@ -65,9 +65,9 @@ export default function Header() {
                 Services <span className={`transition ${mega==="services"?"rotate-180":""}`}>⌄</span>
               </button>
               {[
-                { label: "Case Studies", href: "/case-studies" },
-                { label: "Insights", href: "/insights" },
                 { label: "Careers", href: "/careers" },
+                { label: "CSR", href: "/csr" },
+                { label: "Employee Wellbeing", href: "/wellbeing" },
                 { label: "Contact", href: "/contact" },
               ].map((l) => (
                 <Link key={l.label} href={l.href} className="px-3 xl:px-4 py-2 text-[13px] font-semibold tracking-[0.06em] uppercase text-[#0C3226]/80 hover:text-[#0C3226] transition">
@@ -97,7 +97,7 @@ export default function Header() {
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
               onMouseLeave={() => setMega(null)}
-              className="absolute inset-x-0 top-full bg-[#FDFCF8] border-t border-black/5 shadow-[0_32px_80px_rgba(0,0,0,0.12)] hidden lg:block"
+              className="absolute inset-x-0 top-full bg-[#FDFCF8] border-t border-black/5 shadow-[0_32px_80px_rgba(0,0,0,0.12)] hidden lg:block max-h-[calc(100vh-116px)] overflow-y-auto"
             >
               <div className="mx-auto max-w-[1440px] px-8 xl:px-12 py-8">
                 <div className="grid grid-cols-12 gap-8">
@@ -144,8 +144,6 @@ export default function Header() {
                     ))}
                   </div>
                 </details>
-                <Link href="/case-studies" onClick={()=>setMobileOpen(false)} className="block py-3 text-lg font-bold border-b border-black/5">Case Studies</Link>
-                <Link href="/insights" onClick={()=>setMobileOpen(false)} className="block py-3 text-lg font-bold border-b border-black/5">Insights</Link>
                 <Link href="/careers" onClick={()=>setMobileOpen(false)} className="block py-3 text-lg font-bold border-b border-black/5">Careers</Link>
                 <Link href="/csr" onClick={()=>setMobileOpen(false)} className="block py-3 text-lg font-bold border-b border-black/5">CSR</Link>
                 <Link href="/wellbeing" onClick={()=>setMobileOpen(false)} className="block py-3 text-lg font-bold border-b border-black/5">Employee Wellbeing</Link>
