@@ -65,7 +65,6 @@ export default function Header() {
                 Services <span className={`transition ${mega==="services"?"rotate-180":""}`}>⌄</span>
               </button>
               {[
-                { label: "Careers", href: "/careers" },
                 { label: "CSR", href: "/csr" },
                 { label: "Employee Wellbeing", href: "/wellbeing" },
                 { label: "Contact", href: "/contact" },
@@ -144,7 +143,6 @@ export default function Header() {
                     ))}
                   </div>
                 </details>
-                <Link href="/careers" onClick={()=>setMobileOpen(false)} className="block py-3 text-lg font-bold border-b border-black/5">Careers</Link>
                 <Link href="/csr" onClick={()=>setMobileOpen(false)} className="block py-3 text-lg font-bold border-b border-black/5">CSR</Link>
                 <Link href="/wellbeing" onClick={()=>setMobileOpen(false)} className="block py-3 text-lg font-bold border-b border-black/5">Employee Wellbeing</Link>
                 <Link href="/contact" onClick={()=>setMobileOpen(false)} className="mt-6 flex items-center justify-center gap-2 bg-[#0C3226] text-white py-4 rounded-full font-bold">Book Consultation ↗</Link>
